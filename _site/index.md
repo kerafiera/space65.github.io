@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<header class="top-nav">
+
+	<div class="header-logo">
+		<a href="#">
+		<img src="../_assets/images/monogram_black.png"></a>
+	</div>
+	<div>
+		<input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">CV</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+	</div>
+
+
+
+	<div class="toggle-theme">
+		
+		<button class="moon" onclick="dark()">
+		<ion-icon name="moon" ></ion-icon></button>
+		
+	</div>
+
+
+</header>
+
+<body class="wrapper">
+	<section class="hero">
+		<div class="hero-text">
+		<h1>Building digital products, brands, and experience</h1>
+		<p>Hi, I'm Karen – UI Designer. I'm a creative and curious person who
+			 has a lot of experience and fond moments working with design, and websites.
+			</p>	
+		<p>	<button class="ctabtn"><a href="#">HIRE ME</a></button> 
+			<span>Download my CV</span></p>		
+
+		</div>
+		<div class="hero-image">
+			<img src="http://placekitten.com/g/350/350" style="padding-top: 8vh;">
+		</div>			</section>
+
+<section><hr></section>
+	<section class="portfolio">
+	
+		<div class="portfolio-intro">
+			<h2>Latest Work</h2>
+			<p>I shows only the best websites and portfolios built completely with passion, simplicity & creativity!</p>
+			<span>Show all works </span></div>
+		
+		<div class="portfolio-item">
+			<arcticle><img src="_assets/images/work-1.jpg">
+				<span class="categories">UI/UX DESIGN</span>
+				<h3><a href="/">Kibi the Cat</a></h3>
+				<p>An alternative to paperback is the glossy cover, otherwise known as</p>
+			</arcticle></div>
+		<div class="portfolio-item">
+			<arcticle><img src="_assets/images/work-1.jpg">
+				<span class="categories">UI/UX DESIGN</span>
+				<h3><a href="/">Pomodoro</a></h3>
+				<p>An alternative to paperback is the glossy cover, otherwise known as</p>
+			</arcticle></div>
+			
+		<div class="portfolio-item">
+			<arcticle><img src="_assets/images/work-1.jpg">
+				<span class="categories">UI/UX DESIGN</span>
+				<h3><a href="/">Kibi the Cat</a></h3>
+				<p>An alternative to paperback is the glossy cover, otherwise known as</p>
+			</arcticle></div>
+
+		<div class="portfolio-item">
+			<arcticle><img src="_assets/images/work-1.jpg">
+				<span class="categories">UI/UX DESIGN</span>
+				<h3><a href="/">Kibi the Cat</a></h3>
+				<p>An alternative to paperback is the glossy cover, otherwise known as</p>
+			</arcticle></div>
+
+
+			</section>
+
+
+	<script>
+	function dark() {
+		 var element = document.body;
+		   element.classList.toggle("dark-mode");
+				}
+				
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function hamburger() {
+	document.getElementById("mobileNav").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it 
+	// 		<ul class="nav-list" id="mobileNav">
+	window.onclick = function(event) {
+	if (!event.target.matches('.hamburgerbtn')) {
+		var dropdowns = document.getElementsByClassName("nav-list");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		}
+		}
+	}
+	}
+				</script>
+</body>
+
+<footer>
+	<link rel="stylesheet" href="assets/css/reset.css">	
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+</footer>
+</html>
+	
