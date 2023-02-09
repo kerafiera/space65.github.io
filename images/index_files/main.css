@@ -5,11 +5,10 @@
 	margin: 0;
 }
 
-html, body {
+body {
 	font-family: 'Rubik light', sans-serif;	
 	line-height: 1.2;
-	color: #4f5765;
-	scroll-behavior: smooth;
+	color: #687385;
   }
 
   /* Make all link text black with no text decoration */
@@ -57,7 +56,7 @@ ion-icon {
   .wrapper {
 	max-width: 1080px; /* 2 */
 	margin: 0 auto;
-	padding: 0 2vh;
+	padding: 0 10px;
   }
 
 
@@ -69,8 +68,8 @@ ion-icon {
   }
 
 .header-logo img {
-	width: 50px;
-
+	width: 0px;
+	margin-left: -5vh;
 }
 
 header {
@@ -96,20 +95,19 @@ header {
   }
 
   .menu li:first-child a {
-	color: #55bd93;
+	color: #4D41E0;
   }
 
 
 .moon {
 	margin-left: 2vh;
 	align-self: flex-end;
-	color: #72EDBC;
+	color: #596fb3;
 	cursor: pointer;
 }
 
 .top-nav {
 	display: flex;
-
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
@@ -191,10 +189,11 @@ header {
 .hero {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 25px;
-	overflow: visible;
-	display: grid;
-	box-sizing: border-box;  
+	margin-top: 1vh;
   }
+
+
+
 
 
 h1 ~ p {
@@ -206,7 +205,7 @@ h1 ~ p {
 section {
 	overflow: visible;
 	display: grid;
-	margin: 2vh 0;
+	margin: 3vh 0;
 	box-sizing: border-box;
   
   }
@@ -277,13 +276,45 @@ section {
 
   }
 
+
+/**SCROLLER**/
+/* Scroller styling 
+.scroller {
+	height: 1.2em;
+	line-height: 1.2em;
+	position: relative;
+	overflow: hidden;
+	width: auto;
+  }
+  .scroller > span {
+	position: absolute;
+	top: 0;
+	animation: slide 5s infinite;
+	font-weight: bold;
+  }
+  @keyframes slide {
+	0% {
+	  top: 0;
+	}
+	25% {
+	  top: -1.2em;
+	}
+	50% {
+	  top: -2.4em;
+	}
+	75% {
+	  top: -3.6em;
+	}
+  }*/
 .ctabtn {
 	margin: 2em 0;
 }
 
 .ctabtn > span {
+	border: 2px solid rgb(78, 83, 83);
 	border-radius: 30px;
 	padding: .75rem 1.25rem;
+	margin-right: .5em;
 }
 
 .ctabtn span:first-child {
@@ -347,40 +378,15 @@ button {
 }
 
 
-.top {
-	--offset: 50px; 
-	
-	position: sticky;
-	float: right;
-	bottom: 40px;      
-	margin-right: -50px; 
-	place-self: end;
-	margin-top: calc(100vh + var(--offset));
-	
-	/* visual styling */
-	text-decoration: none;
-	padding: 10px;
-	font-family: sans-serif;
-	color: #fff;
-	background: rgba(0, 0, 0, 0.48);
-	border-radius: 100px;
-	white-space: nowrap;
-  }
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	.wrapper {
-		width: 90%;
-		padding: 1vw;
-		margin: 0 auto;
-	}
+
 	.portfolio, .hero, .header,
 	section {
 		grid-template-columns: 1fr;
-		padding: 0 1vw;
-		gap: 0;
-		
+		padding: 0 2vh;
 	}
 
 	hr {
@@ -388,16 +394,15 @@ button {
 	}
 
 	.header-logo img {
-		width: 40px;
+		width: 50%;
 	}
 
 	.hero-image img {
-		width: 230px;
-		margin-top: -50px;
+		width: 250px;
 	}
 
 	h1 {
-		font-size: 2.3em;
+		font-size: 2em;
 	}
 
 	h1 ~ p {
@@ -409,15 +414,14 @@ button {
     flex-wrap: wrap;
 	  }
 
-	  .ctabtn {
+	.ctabtn {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-
 	}
-	.ctabtn span {
-		width: 100%;
-		text-align: center;
+
+	.ctabtn > span {
+	margin-bottom: 1.1rem;
 	}
 
 	/**MOBILE NAVIGATION**/
@@ -476,73 +480,41 @@ button {
 			width: 90%;
 			text-align: center;
 		}
-
-		.hero-text {
-			width: 100%;
-			margin: 0 auto;
-			/* border: 2px solid saddlebrown; */
-		}
-		.top {
-			margin-right: 15px; 
-		}
 }
 
 /* Medium devices (portrait tablets and large phones) */
-@media only screen and (max-width: 820px) {
-.wrapper {
-	width: 90%;
-	padding: 1vw;
-	margin: 0 auto;
-}
-
+@media only screen and (max-width: 768px) {
 	.portfolio, .hero, .header,
 	section {
 		grid-template-columns: 1fr;
-		margin-top: 20px 0;
+		padding: 0 2vh;
 	}
 
-	.hero {
-		display: flex;
-		width: 100%;
-		flex-direction: column;
-
-	}
 .hero-text {
-    width: 100%;
-	margin: 0 auto;
+    width: 80%;
 }
-.header-logo img {
-	width: 40px;
-}
-
-.hero-image img {
-	width: 230px;
-	margin-top: -50px;
-}
-.toggle-theme {
-	flex: 0 0 50px;
-	justify-content: end;
+	.header-logo img {
+		width: 50%;
+	}
 }
 
+/** Large Devices / Desktop **/
+@media only screen and (min-width: 980px){
+
+	.portfolio, .hero, .header,
+	section {
+		padding: 0 8vh;
+	}
+
+	.header-logo img {
+		width: 100%;
+		margin-left: 5vh;
+	}
+
+	.hero-image img {
+		width: 50vh;
+		justify-content: center;
+	}
 
 
-
-h1 {
-	font-size: 2.7em;
 }
-.ctabtn {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	column-gap: 10px;
-}
-.ctabtn span {
-	width: 90%;
-	text-align: center;
-	margin-bottom: 10px;
-}
-.top {
-	margin-right: -10px; 
-}
-}
-
