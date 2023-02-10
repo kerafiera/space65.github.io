@@ -42,7 +42,7 @@ ion-icon {
   h1 {
 	font-family: 'Rubik', sans-serif;	
 	font-weight : Bold;
-	font-size: 2.7em;
+	font-size: 3em;
 	color: #141F4D;
 	line-height: 1.2;
 
@@ -224,6 +224,34 @@ section {
   
   }
 
+
+  .skillsets {
+	width: 100%;
+	border-radius: 30px;
+	background-color: rgb(232, 232, 232, .25);
+	padding-bottom: 1em;
+  }
+  .skillsets img {
+	width: 80px;
+  }
+
+  .skillsets ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  }
+
+  .skillsets h2 {
+	margin: 1rem 0;
+	font-size: 1.25em;
+	font-weight : 200;
+	text-transform: uppercase;
+	color: rgb(179, 179, 179);
+  }
+
+  .skillsets img {
+	filter: grayscale(100%);
+  }
   /**PORTFOLIO**/
   .portfolio {
 	grid-template-columns: repeat(3, 1fr);
@@ -236,12 +264,14 @@ section {
 	padding: 2em 0;
   }
 
-  .portfolio-intro h2 {
+h2 {
 	font-family: 'Rubik', sans-serif;	
-	font-size: 2em;
+	font-size: 1.8em;
 	font-weight : Bold;
 	color: #2d2d2d;
+	margin: 1rem 0;
   }
+
 
 .portfolio-item img {
 	width: 300px;
@@ -257,7 +287,6 @@ section {
   h2 ~ p {
 	font-size: 1em;
 	line-height: 2em;
-
   }
 
 /**PORTFOLIO CATEGORIES**/
@@ -475,6 +504,17 @@ footer {
 		width: 100%;
 		text-align: center;
 	}
+
+	.skillsets {
+	width: 100%;
+	
+	  }
+	.skillsets ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: .25rem;
+		margin: auto;
+	  }
 
 	/**MOBILE NAVIGATION**/
 
