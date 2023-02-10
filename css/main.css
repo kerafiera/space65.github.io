@@ -8,8 +8,9 @@
 html, body {
 	font-family: 'Rubik light', sans-serif;	
 	line-height: 1.2;
-	color: #4f5765;
+	color: #141F4D;
 	scroll-behavior: smooth;
+
   }
 
   /* Make all link text black with no text decoration */
@@ -20,7 +21,7 @@ a {
   
   /* All images must not be larger than parent container */
   img {
-	width: 100%;
+	width: 100%;	
   }
 
   /* No styling on list items */
@@ -29,7 +30,7 @@ li {
   }
 
 ion-icon {
-	font-size: 1.75rem;
+	font-size: 1.5rem;
   }
 
 .center {
@@ -42,20 +43,20 @@ ion-icon {
 	font-family: 'Rubik', sans-serif;	
 	font-weight : Bold;
 	font-size: 2.7em;
-	color: #080227;
+	color: #141F4D;
 	line-height: 1.2;
 
   }
 
   p {
-	font-size: 3vh;
+	font-size: 1em;
 	margin: 10px 0;
   }
   
 
   /** LAYOUT **/
   .wrapper {
-	max-width: 1080px; /* 2 */
+	max-width: 1140px; /* 2 */
 	margin: 0 auto;
 	padding: 0 2vh;
   }
@@ -74,10 +75,8 @@ ion-icon {
 }
 
 header {
-	margin-top: 4vh;
+	margin-top: 2vh;
 }
-
-
 
 /******** TOP NAVIGATION ******/
 
@@ -93,18 +92,30 @@ header {
 .menu li a {
 	font-family: 'Rubik', sans-serif;	
 	font-weight : 500;
+	color: #141F4D;
   }
+
+
 
   .menu li:first-child a {
-	color: #55bd93;
+	color: #3653E8;
   }
 
+  .dot {
+	background-color: #3653E8;
+	position: relative;
+	top: 2;
+	width: 4px;
+	height: 4px;
+	border-radius: 90px;
+  }
 
 .moon {
 	margin-left: 2vh;
 	align-self: flex-end;
-	color: #72EDBC;
+	color: #141F4D;
 	cursor: pointer;
+
 }
 
 .top-nav {
@@ -119,6 +130,8 @@ header {
 	color: rgb(47, 47, 47);
 	height: 50px;
 	padding: 1em;
+	margin-bottom: 10vh;
+	
 
   }
   
@@ -230,13 +243,14 @@ section {
 	color: #2d2d2d;
   }
 
-.portfolio-item > article {
-	border-radius: 10px;
-
+.portfolio-item img {
+	width: 300px;
+	border-radius: 20px;
+	cursor: pointer;
   }
 
-  .portfolio-item:hover {
-
+  .portfolio-item img:hover {
+	opacity: 90%;
 	animation: slideIn 1.5s ease-in-out forwards;
   }
 
@@ -279,31 +293,50 @@ section {
 
 .ctabtn {
 	margin: 2em 0;
+
 }
 
 .ctabtn > span {
 	border-radius: 30px;
 	padding: .75rem 1.25rem;
+	cursor: pointer;
+
+	border: 2px solid #141F4D;
+	-webkit-transition: -webkit-transform 725ms ease;
+    transition: -webkit-transform 725ms ease;
+    transition: transform 725ms ease;
+    transition: transform 725ms ease, -webkit-transform 725ms ease;
 }
 
 .ctabtn span:first-child {
-	background-color: rgb(89, 196, 190);
-	color: #fff;
+	background-color: #72EDBC;
+	color: #141F4D;
 }
+
+.ctabtn span:first-child:hover {
+	background-color: rgb(54,83,232,.85);
+	-webkit-transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	transform: scale(1.07);
+	color: #72edbc;	
+	}
+
 
 .ctabtn span:first-child a {
-	color: rgb(94, 94, 94);
 	font-size: .95rem;
 	font-family: 'Rubik', sans-serif;	
 	font-weight : 500;
-	color: #fff;
+	color: #141F4D;
 }
 
+
+
 .ctabtn a {
-	color: rgb(94, 94, 94);
+	color: #141F4D;
 	font-size: .95rem;
 	font-family: 'Rubik', sans-serif;	
 	font-weight : 500;
+	text-transform: uppercase;
 }
 
   hr {
@@ -366,6 +399,29 @@ button {
 	border-radius: 100px;
 	white-space: nowrap;
   }
+
+footer {
+	box-sizing: border-box;
+	border: 1px solid black;
+	margin-left: calc(-100vw / 2 + 500px / 2);
+	margin-right: calc(-100vw / 2 + 500px / 2);
+	;
+}
+
+.footer-info {
+
+	background-color: #141F4D;
+	height: 20vh;
+	overflow: hidden
+}
+
+.footer-info p {
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+	color: #8796d2;
+	font-size: smaller;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
