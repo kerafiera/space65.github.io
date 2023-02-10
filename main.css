@@ -8,9 +8,8 @@
 html, body {
 	font-family: 'Rubik light', sans-serif;	
 	line-height: 1.2;
-	color: #141F4D;
+	color: #4f5765;
 	scroll-behavior: smooth;
-
   }
 
   /* Make all link text black with no text decoration */
@@ -21,7 +20,7 @@ a {
   
   /* All images must not be larger than parent container */
   img {
-	width: 100%;	
+	width: 100%;
   }
 
   /* No styling on list items */
@@ -30,7 +29,7 @@ li {
   }
 
 ion-icon {
-	font-size: 1.5rem;
+	font-size: 1.75rem;
   }
 
 .center {
@@ -42,21 +41,21 @@ ion-icon {
   h1 {
 	font-family: 'Rubik', sans-serif;	
 	font-weight : Bold;
-	font-size: 3em;
-	color: #141F4D;
+	font-size: 2.7em;
+	color: #080227;
 	line-height: 1.2;
 
   }
 
   p {
-	font-size: 1em;
+	font-size: 3vh;
 	margin: 10px 0;
   }
   
 
   /** LAYOUT **/
   .wrapper {
-	max-width: 1140px; /* 2 */
+	max-width: 1080px; /* 2 */
 	margin: 0 auto;
 	padding: 0 2vh;
   }
@@ -75,8 +74,10 @@ ion-icon {
 }
 
 header {
-	margin-top: 2vh;
+	margin-top: 4vh;
 }
+
+
 
 /******** TOP NAVIGATION ******/
 
@@ -92,30 +93,18 @@ header {
 .menu li a {
 	font-family: 'Rubik', sans-serif;	
 	font-weight : 500;
-	color: #141F4D;
   }
-
-
 
   .menu li:first-child a {
-	color: #3653E8;
+	color: #55bd93;
   }
 
-  .dot {
-	background-color: #3653E8;
-	position: relative;
-	top: 2;
-	width: 4px;
-	height: 4px;
-	border-radius: 90px;
-  }
 
 .moon {
 	margin-left: 2vh;
 	align-self: flex-end;
-	color: #141F4D;
+	color: #72EDBC;
 	cursor: pointer;
-
 }
 
 .top-nav {
@@ -130,8 +119,6 @@ header {
 	color: rgb(47, 47, 47);
 	height: 50px;
 	padding: 1em;
-	margin-bottom: 10vh;
-	
 
   }
   
@@ -224,34 +211,6 @@ section {
   
   }
 
-
-  .skillsets {
-	width: 100%;
-	border-radius: 30px;
-	background-color: rgb(232, 232, 232, .25);
-	padding-bottom: 1em;
-  }
-  .skillsets img {
-	width: 80px;
-  }
-
-  .skillsets ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-  }
-
-  .skillsets h2 {
-	margin: 1rem 0;
-	font-size: 1.25em;
-	font-weight : 200;
-	text-transform: uppercase;
-	color: rgb(179, 179, 179);
-  }
-
-  .skillsets img {
-	filter: grayscale(100%);
-  }
   /**PORTFOLIO**/
   .portfolio {
 	grid-template-columns: repeat(3, 1fr);
@@ -264,29 +223,27 @@ section {
 	padding: 2em 0;
   }
 
-h2 {
+  .portfolio-intro h2 {
 	font-family: 'Rubik', sans-serif;	
-	font-size: 1.8em;
+	font-size: 2em;
 	font-weight : Bold;
 	color: #2d2d2d;
-	margin: 1rem 0;
   }
 
+.portfolio-item > article {
+	border-radius: 10px;
 
-.portfolio-item img {
-	width: 300px;
-	border-radius: 20px;
-	cursor: pointer;
   }
 
-  .portfolio-item img:hover {
-	opacity: 90%;
+  .portfolio-item:hover {
+
 	animation: slideIn 1.5s ease-in-out forwards;
   }
 
   h2 ~ p {
 	font-size: 1em;
 	line-height: 2em;
+
   }
 
 /**PORTFOLIO CATEGORIES**/
@@ -322,50 +279,31 @@ h2 {
 
 .ctabtn {
 	margin: 2em 0;
-
 }
 
 .ctabtn > span {
 	border-radius: 30px;
 	padding: .75rem 1.25rem;
-	cursor: pointer;
-
-	border: 2px solid #141F4D;
-	-webkit-transition: -webkit-transform 725ms ease;
-    transition: -webkit-transform 725ms ease;
-    transition: transform 725ms ease;
-    transition: transform 725ms ease, -webkit-transform 725ms ease;
 }
 
 .ctabtn span:first-child {
-	background-color: #72EDBC;
-	color: #141F4D;
+	background-color: rgb(89, 196, 190);
+	color: #fff;
 }
-
-.ctabtn span:first-child:hover {
-	background-color: rgb(54,83,232,.85);
-	-webkit-transform: scale(1.07);
-	-ms-transform: scale(1.07);
-	transform: scale(1.07);
-	color: #72edbc;	
-	}
-
 
 .ctabtn span:first-child a {
+	color: rgb(94, 94, 94);
 	font-size: .95rem;
 	font-family: 'Rubik', sans-serif;	
 	font-weight : 500;
-	color: #141F4D;
+	color: #fff;
 }
 
-
-
 .ctabtn a {
-	color: #141F4D;
+	color: rgb(94, 94, 94);
 	font-size: .95rem;
 	font-family: 'Rubik', sans-serif;	
 	font-weight : 500;
-	text-transform: uppercase;
 }
 
   hr {
@@ -429,29 +367,6 @@ button {
 	white-space: nowrap;
   }
 
-footer {
-	box-sizing: border-box;
-	border: 1px solid black;
-	margin-left: calc(-100vw / 2 + 500px / 2);
-	margin-right: calc(-100vw / 2 + 500px / 2);
-	;
-}
-
-.footer-info {
-
-	background-color: #141F4D;
-	height: 20vh;
-	overflow: hidden
-}
-
-.footer-info p {
-	width: 75%;
-	margin: 0 auto;
-	text-align: center;
-	color: #8796d2;
-	font-size: smaller;
-}
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -482,7 +397,7 @@ footer {
 	}
 
 	h1 {
-		font-size: 2.2em;
+		font-size: 2.3em;
 	}
 
 	h1 ~ p {
@@ -504,17 +419,6 @@ footer {
 		width: 100%;
 		text-align: center;
 	}
-
-	.skillsets {
-	width: 100%;
-	
-	  }
-	.skillsets ul {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: .25rem;
-		margin: auto;
-	  }
 
 	/**MOBILE NAVIGATION**/
 
